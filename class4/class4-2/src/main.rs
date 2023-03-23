@@ -11,9 +11,9 @@ fn sum_u32(numbers: &[u32]) -> Option<u32> {
 }
 
 fn main() {
-    let numbers = &[1, 2, 3, 4, 5];
-    println!("Sum: {:?}", sum_u32(numbers)); // 输出：Sum: Some(15)
+    let numbers = &[5, 2, 0, 1, 3, 1, 4];
+    println!("Sum: {:?}", sum_u32(numbers));
 
     let large_numbers = &[u32::MAX, 1];
-    println!("Sum: {:?}", sum_u32(large_numbers)); // 输出：Sum: None
+    println!("Sum: {:?}", sum_u32(large_numbers));
 }

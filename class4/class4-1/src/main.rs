@@ -12,9 +12,9 @@ trait Duration {
 impl Duration for TrafficLight {
     fn duration(&self) -> u32 {
         match *self {
-            TrafficLight::Red => 60,    // 红灯持续 60 秒
-            TrafficLight::Yellow => 5,  // 黄灯持续 5 秒
-            TrafficLight::Green => 30,  // 绿灯持续 30 秒
+            TrafficLight::Red => 80,  // 红灯持续 60 秒
+            TrafficLight::Yellow => 10,  // 黄灯持续 5 秒
+            TrafficLight::Green => 50, // 绿灯持续 30 秒
         }
     }
 }
